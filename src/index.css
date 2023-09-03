@@ -172,6 +172,8 @@ li {
   .img-card {
     height: 10vh;
     width: 10vh;
+    font-size: 15px;
+    font-style: italic;
   }
 }
 
