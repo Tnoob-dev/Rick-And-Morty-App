@@ -13,7 +13,7 @@ const Header = () => {
                 </a>
                 <ul>
                     <li>
-                        <a href="https://github.com/Tnoob-dev/Rick-And-Morty-App/"><BsGithub className='github-icon' /></a>
+                        <a href="https://github.com/Tnoob-dev/Rick-And-Morty-App/" target="blank"><BsGithub className='github-icon' /></a>
                     </li>
                 </ul>
             </div>
