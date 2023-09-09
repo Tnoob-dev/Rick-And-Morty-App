@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #1d232a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  padding-bottom: 1%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  color: #9b9898;
+}
+
+.main-header {
+  border-bottom-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .rick-text {
+    color: #96d7d6;
+  }
+
+  & .morty-text {
+    color: #fcf976;
+  }
+
+  & .api-text, .and-text {
+    color: #f8cba8;
+  }
+}
+
+.searchbar-div {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .searchbar {
+    width: 70vh;
+    height: 2.5vh;
+    color: #2a323c;
+    background-color: #ffffff;
+    border-radius: 20vh;
+    border-style: none;
+    padding: 1.2vh;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.main-header span {
+  font-size: 50px;
+} 
+
+.card {
+  display: flex;
+  overflow: hidden;
+  padding-right: 270px;
+  border-radius: 15px;
+  background-color: #2a323c;
+  box-shadow: 15px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.main-card {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  gap: 30px;
+  font-size: 15px;
+}
+
+.img-card {
+  height: 165px;
+  position: relative;
+  display: block;
+}
+
+.item {
+  position: absolute;
+  left: 40%;
+  line-height: 1;
+}
+
+.pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes alive {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+}
+
+.status-circle-alive {
+  margin-right: 3px;
+  font-size: xx-small;
+  color: #3eeb3e;
+  animation: alive 2s infinite;
+}
+
+.status-circle-dead {
+  margin-right: 3px;
+  font-size: xx-small;
+  color: #e92929;
+}
+
+
+.status-circle-unknown {
+  margin-right: 3px;
+  font-size: xx-small;
+  color: #9e9999;
+}
+
+.github-icon {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.github-icon:hover {
+  color: #f8cba8;
+}
+
+@media (max-width: 900px) {
+
+  .main-header {
+    & span {
+      font-size: 30px;
+    }
+  }
+
+  .searchbar-div {
+    & .searchbar {
+      height: auto;
+      width: auto;
+      font-size: large;
+    }
+  }
+
+  .main-card {
+    height: 400px;
+    width: auto;
+    font-size: 14px;
+    margin-left: 11%;
+  }
+
+  .item {
+    top: 50%;
+    left: 15%;
+    margin-top: 7%;
+  }
+}
